@@ -148,9 +148,13 @@ a:visited {
   font-size: 2rem;
 }
 
+nav a,
+button {
+  font-family: "Bebas Neue", cursive;
+}
+
 nav a {
   margin: 2rem 2rem;
-  font-family: "Bebas Neue", cursive;
 }
 
 nav {
@@ -164,17 +168,19 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-right: 38rem;
 }
 
 h1,
 h2 {
   color: #f5f5f5;
+  padding-bottom: 2rem;
 }
 
 h1 {
   font-family: "Princess Sofia", cursive;
-  font-size: 10rem;
-  padding-bottom: 2rem;
+  font-size: 9.5rem;
+  padding-top: 18rem;
 }
 
 h2 {
@@ -185,4 +191,10 @@ h2 {
 
 button {
   width: fit-content;
+  background-color: #c8713d;
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.6rem;
+  border: 4px solid #242829;
 }
