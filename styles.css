@@ -146,7 +146,9 @@ nav,
 h1,
 h2,
 button,
-.about {
+.about,
+p,
+h3 {
   color: #f5f5f5;
 }
 
@@ -216,10 +218,56 @@ button {
   font-size: 1.3rem;
   width: 22%;
   text-align: center;
-  background-color: rgba(36, 40, 41, 0.48);
+  background-color: rgba(36, 40, 41, 0.7);
   border-radius: 0.6rem;
   margin-left: 28rem;
   margin-bottom: 30rem;
   margin-top: 10rem;
   padding-top: 2rem;
+}
+
+/* TEAM.HTML SPECIFIC CSS */
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 8rem;
+}
+
+section img {
+  height: 144px;
+  width: 144px;
+  border-radius: 50%;
+}
+
+div.team {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+  margin-right: 1rem;
+  padding-top: 1rem;
+}
+
+.bio {
+  background-color: rgba(36, 40, 41, 0.7);
+  border-radius: 1rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
