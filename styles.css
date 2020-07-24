@@ -198,3 +198,10 @@ button {
   border-radius: 0.6rem;
   border: 4px solid #242829;
 }
+
+/* ABOUT.HTML SPECIFIC CSS*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
