@@ -133,7 +133,7 @@ font-family: 'Princess Sofia', cursive; */
 /* CODE BEGINS, HERE */
 
 html {
-  background: url(/Sprout/landing-page/img/bg.jpg) no-repeat center center fixed;
+  background: url(img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
