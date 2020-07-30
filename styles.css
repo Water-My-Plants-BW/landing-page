@@ -285,6 +285,8 @@ section p {
     margin: 1rem 1rem;
   }
 
+  /*index.html css*/
+
   h1 {
     font-size: 6.5rem;
   }
@@ -292,9 +294,6 @@ section p {
     font-size: 01rem;
   }
   #cta {
-    /* margin-left: 0%;
-    padding-right: 40%;
-    padding-bottom: 20rem; */
     align-content: flex-start;
     padding-right: 20rem;
   }
@@ -302,4 +301,18 @@ section p {
   #cta a {
     font-size: 2rem;
   }
+
+  /*about.html css*/
+  .about {
+    font-size: 1.3rem;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(36, 40, 41, 0.7);
+    border-radius: 0.6rem;
+    margin-left: 5rem;
+    margin-top: 12rem;
+    padding-top: 2rem;
+  }
 }
+
+/* 500px media query begins */
