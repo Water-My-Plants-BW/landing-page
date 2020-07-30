@@ -304,7 +304,7 @@ section p {
 
   /*about.html css*/
   .about {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 50%;
     text-align: center;
     background-color: rgba(36, 40, 41, 0.7);
@@ -313,6 +313,33 @@ section p {
     margin-top: 12rem;
     padding-top: 2rem;
   }
+
+  /*team.html css*/
+
+  section {
+    width: 80%;
+    margin-top: 2%;
+  }
+
+  section img {
+    height: 90px;
+    width: 90px;
+  }
+
+  div.team {
+    width: 25%;
+    align-items: center;
+    margin-right: 1rem;
+    padding-top: 1rem;
+  }
+
+  section p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
 }
 
 /* 500px media query begins */
+
+@media (max-width: 500px) {
+}
