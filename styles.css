@@ -232,6 +232,7 @@ section {
   flex-wrap: wrap;
   width: 55%;
   margin-left: 8rem;
+  align-items: stretch;
 }
 
 section img {
@@ -269,4 +270,36 @@ section p {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+
+/* 800px media query begins */
+
+@media (max-width: 800px) {
+  a:link,
+  a:visited {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    margin: 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+  h2 {
+    font-size: 01rem;
+  }
+  #cta {
+    /* margin-left: 0%;
+    padding-right: 40%;
+    padding-bottom: 20rem; */
+    align-content: flex-start;
+    padding-right: 20rem;
+  }
+
+  #cta a {
+    font-size: 2rem;
+  }
 }
