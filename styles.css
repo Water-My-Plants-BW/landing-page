@@ -163,13 +163,14 @@ button {
   font-family: "Bebas Neue", cursive;
 }
 
-nav a {
+.navLinks a {
   margin: 2rem 2rem;
 }
 
-nav {
+.navLinks {
   display: flex;
   justify-content: flex-end;
+  margin-top: 1rem;
 }
 
 #cta {
@@ -218,7 +219,7 @@ button {
   font-size: 1.3rem;
   width: 22%;
   text-align: center;
-  background-color: rgba(36, 40, 41, 0.7);
+  background-color: rgba(36, 40, 41, 0.85);
   border-radius: 0.6rem;
   margin-left: 28rem;
   margin-top: 10rem;
@@ -251,7 +252,7 @@ div.team {
 }
 
 .bio {
-  background-color: rgba(36, 40, 41, 0.7);
+  background-color: rgba(36, 40, 41, 0.85);
   border-radius: 1rem;
   text-align: center;
   width: 100%;
@@ -264,6 +265,7 @@ h3 {
   font-weight: bold;
   padding-bottom: 1rem;
   margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 section p {
@@ -281,7 +283,7 @@ section p {
     font-size: 1.5rem;
   }
 
-  nav a {
+  .navLinks {
     margin: 1rem 1rem;
   }
 
@@ -299,7 +301,7 @@ section p {
   }
 
   #cta a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   /*about.html css*/
@@ -307,7 +309,7 @@ section p {
     font-size: 1.2rem;
     width: 50%;
     text-align: center;
-    background-color: rgba(36, 40, 41, 0.7);
+    background-color: rgba(36, 40, 41, 0.85);
     border-radius: 0.6rem;
     margin-left: 5rem;
     margin-top: 12rem;
@@ -317,29 +319,160 @@ section p {
   /*team.html css*/
 
   section {
-    width: 80%;
+    width: 90%;
     margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   section img {
-    height: 90px;
-    width: 90px;
+    height: 120px;
+    width: 120px;
   }
 
   div.team {
-    width: 25%;
+    width: 30%;
     align-items: center;
     margin-right: 1rem;
     padding-top: 1rem;
   }
 
+  section h3 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
   section p {
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
 }
 
 /* 500px media query begins */
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
+  html {
+    background: url(img/bg500px.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%vh;
+  }
+
+  /*NAV CSS*/
+
+  .line {
+    width: 3rem;
+    height: 0.4rem;
+    background: white;
+    margin: 0.5rem;
+    border-radius: 15%;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    /* top: 50%; */
+    transform: translate(-5%, -1rem);
+    z-index: 2;
+    margin-top: 2rem;
+  }
+
+  .navLinks {
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #242829;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navLinks.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .navLinks li a {
+    font-size: 2.5rem;
+  }
+
+  /*index.html CSS */
+
+  #cta {
+    padding-right: 0rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  h2 {
+    padding-bottom: 0.8rem;
+  }
+
+  button {
+    font-size: 2.3rem;
+    padding: 0.15rem 1.6rem;
+  }
+
+  /* about.html CSS */
+
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    font-size: 1rem;
+    width: 70%;
+    margin-top: 9rem;
+  }
+  /* team.html CSS */
+
+  section {
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  section img {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.team {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1rem;
+  }
+
+  section h3 {
+    font-size: 1.7;
+    padding-bottom: 0.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Poppins:wght@300&family=Princess+Sofia&display=swap"
@@ -11,22 +12,33 @@
     <title>About</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Meet The Team</a>
-    </nav>
+    <div class="aboutContent">
+      <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
 
-    <div class="about">
-      <p>
-        Ensuring that all your plants are consistently watered is actually
-        pretty difficult. Sprout is an app that helps to solve those problems.
-      </p>
-      <p>
-        With an easy to use interface for creating a plant watering schedule
-        tailored to each individual plant, Sprout will remind users when it's
-        time to feed that foliage and quench your plants' thirst.
-      </p>
+        <ul class="navLinks">
+          <li><a href="index.html" id="home">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="team.html">MEET THE TEAM</a></li>
+        </ul>
+      </nav>
+
+      <div class="about">
+        <p>
+          Ensuring that all your plants are consistently watered is actually
+          pretty difficult. Sprout is an app that helps to solve those problems.
+        </p>
+        <p>
+          With an easy to use interface for creating a plant watering schedule
+          tailored to each individual plant, Sprout will remind users when it's
+          time to feed that foliage and quench your plants' thirst.
+        </p>
+      </div>
     </div>
+    <script src="nav.js"></script>
   </body>
 </html>
