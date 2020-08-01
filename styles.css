@@ -219,7 +219,7 @@ button {
   font-size: 1.3rem;
   width: 22%;
   text-align: center;
-  background-color: rgba(36, 40, 41, 0.7);
+  background-color: rgba(36, 40, 41, 0.85);
   border-radius: 0.6rem;
   margin-left: 28rem;
   margin-top: 10rem;
@@ -252,7 +252,7 @@ div.team {
 }
 
 .bio {
-  background-color: rgba(36, 40, 41, 0.7);
+  background-color: rgba(36, 40, 41, 0.85);
   border-radius: 1rem;
   text-align: center;
   width: 100%;
@@ -265,6 +265,7 @@ h3 {
   font-weight: bold;
   padding-bottom: 1rem;
   margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 section p {
@@ -300,7 +301,7 @@ section p {
   }
 
   #cta a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   /*about.html css*/
@@ -308,7 +309,7 @@ section p {
     font-size: 1.2rem;
     width: 50%;
     text-align: center;
-    background-color: rgba(36, 40, 41, 0.7);
+    background-color: rgba(36, 40, 41, 0.85);
     border-radius: 0.6rem;
     margin-left: 5rem;
     margin-top: 12rem;
@@ -318,30 +319,36 @@ section p {
   /*team.html css*/
 
   section {
-    width: 80%;
+    width: 90%;
     margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   section img {
-    height: 90px;
-    width: 90px;
+    height: 120px;
+    width: 120px;
   }
 
   div.team {
-    width: 25%;
+    width: 30%;
     align-items: center;
     margin-right: 1rem;
     padding-top: 1rem;
   }
 
+  section h3 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
   section p {
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 }
 
 /* 500px media query begins */
-
 
 @media screen and (max-width: 500px) {
   html {
@@ -371,7 +378,7 @@ section p {
     position: absolute;
     cursor: pointer;
     right: 5%;
-    /* top: 50%; */ - didn't work for some reason 
+    /* top: 50%; */
     transform: translate(-5%, -1rem);
     z-index: 2;
     margin-top: 2rem;
@@ -408,20 +415,19 @@ section p {
   }
 
   h1 {
-    font-size: 7rem;
-    padding-top: 3.5rem;
+    font-size: 8rem;
+    padding-top: 5rem;
     padding-bottom: 1rem;
   }
 
+  h2 {
+    padding-bottom: 0.8rem;
+  }
 
-h2 {
-  padding-bottom: .5rem;
-}
-
-button {
-  font-size: 2.3rem;
-  padding: 0.15rem 1.6rem;
-}
+  button {
+    font-size: 2.3rem;
+    padding: 0.15rem 1.6rem;
+  }
 
   /* about.html CSS */
 
@@ -436,5 +442,39 @@ button {
     /*margin-left: auto;
     margin-right: auto;  doesn't appear to affect anything*/
     margin-top: 9rem;
+  }
+  /* team.html CSS */
+
+  section {
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  section img {
+    height: 150px;
+    width: 150px;
+  }
+
+  div.team {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1rem;
+  }
+
+  section h3 {
+    font-size: 1.7;
+    padding-bottom: 0.5rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
